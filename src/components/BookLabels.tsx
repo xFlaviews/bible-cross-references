@@ -19,35 +19,80 @@ const SHORT = [
   'Jam','1Pe','2Pe','1Jn','2Jn','3Jn','Jud','Rev'
 ];
 
-export default function BookLabels({ books, totalVerses }: BookLabelsProps) {
+export default function BookLabels({ books, totalVerses, isMobile }: BookLabelsProps) {
   const { state, dispatch } = useBibleViz();
 
   if (state.mode !== 'overview' && state.mode !== 'book') return null;
 
+  const ntStart = (books[39]?.startVerse ?? 0) / totalVerses;
   const hoveredBook = state.hoveredBook !== null ? books[state.hoveredBook] : null;
   const hoveredCenter = state.hoveredBook !== null
     ? ((books[state.hoveredBook].startVerse + books[state.hoveredBook].verseCount / 2) / totalVerses) * 100
     : 0;
 
+  if (isMobile) {
+    // Mobile: just show OT / NT labels with divider
+    return (
+      <div className="absolute bottom-0 left-0 right-0 h-[36px] pointer-events-none select-none">
+        {/* OT label */}
+        <div className="absolute bottom-2 text-[11px] text-white/50 font-medium"
+          style={{ left: `${ntStart * 50}%`, transform: 'translateX(-50%)' }}>
+          Old Testament
+        </div>
+        {/* NT label */}
+        <div className="absolute bottom-2 text-[11px] text-white/50 font-medium"
+          style={{ left: `${(ntStart + (1 - ntStart) / 2) * 100}%`, transform: 'translateX(-50%)' }}>
+          New Testament
+        </div>
+        {/* Divider */}
+        <div className="absolute bottom-0 top-0 w-px bg-white/30"
+          style={{ left: `${ntStart * 100}%` }} />
+
+        {/* Invisible hit areas still work on mobile */}
+        {books.map((book, index) => {
+          const start = (book.startVerse / totalVerses) * 100;
+          const width = (book.verseCount / totalVerses) * 100;
+          return (
+            <button
+              key={index}
+              className="absolute bottom-0 top-0 pointer-events-auto"
+              style={{ left: `${start}%`, width: `${Math.max(width, 0.5)}%`, minWidth: '8px' }}
+              onClick={() => {
+                if (state.mode === 'book') dispatch({ type: 'GO_BACK' });
+                else if (state.mode === 'overview') dispatch({ type: 'SELECT_BOOK', bookIndex: index });
+              }}
+              title={book.name}
+            />
+          );
+        })}
+
+        {/* Hover tooltip */}
+        {hoveredBook && (
+          <div className="absolute bottom-[38px] pointer-events-none z-50 -translate-x-1/2"
+            style={{ left: `${hoveredCenter}%` }}>
+            <div className="px-2 py-1 rounded-lg bg-[#1a1a2e]/95 border border-white/15 shadow-lg whitespace-nowrap">
+              <span className="text-white text-xs font-medium">{hoveredBook.name}</span>
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  // Desktop: vertical labels + tooltip
   return (
     <div className="absolute bottom-0 left-0 right-0 h-[56px] pointer-events-none select-none">
-      {/* Vertical labels + hit areas */}
       {books.map((book, index) => {
-        const center = ((book.startVerse + book.verseCount / 2) / totalVerses) * 100;
-        const isSelected = state.selectedBook === index;
-        const isHovered = state.hoveredBook === index;
         const start = (book.startVerse / totalVerses) * 100;
         const width = (book.verseCount / totalVerses) * 100;
+        const isSelected = state.selectedBook === index;
+        const isHovered = state.hoveredBook === index;
 
         return (
           <button
             key={index}
             className="absolute bottom-0 top-0 pointer-events-auto hover:bg-white/5 transition-colors flex items-end justify-center"
-            style={{
-              left: `${start}%`,
-              width: `${Math.max(width, 0.4)}%`,
-              minWidth: '10px',
-            }}
+            style={{ left: `${start}%`, width: `${Math.max(width, 0.4)}%`, minWidth: '10px' }}
             onClick={() => {
               if (state.mode === 'book') dispatch({ type: 'GO_BACK' });
               else if (state.mode === 'overview') dispatch({ type: 'SELECT_BOOK', bookIndex: index });
@@ -77,12 +122,9 @@ export default function BookLabels({ books, totalVerses }: BookLabelsProps) {
         );
       })}
 
-      {/* Floating tooltip on hover */}
       {hoveredBook && (
-        <div
-          className="absolute bottom-[58px] pointer-events-none z-50 -translate-x-1/2"
-          style={{ left: `${hoveredCenter}%` }}
-        >
+        <div className="absolute bottom-[58px] pointer-events-none z-50 -translate-x-1/2"
+          style={{ left: `${hoveredCenter}%` }}>
           <div className="px-2.5 py-1.5 rounded-lg bg-[#1a1a2e]/95 backdrop-blur-sm border border-white/15 shadow-lg whitespace-nowrap">
             <span className="text-white text-xs font-medium">{hoveredBook.name}</span>
             <span className="text-white/40 text-[10px] ml-2">
@@ -93,11 +135,8 @@ export default function BookLabels({ books, totalVerses }: BookLabelsProps) {
         </div>
       )}
 
-      {/* OT/NT divider */}
-      <div
-        className="absolute bottom-0 top-0 w-px bg-white/25"
-        style={{ left: `${(books[39]?.startVerse ?? 0) / totalVerses * 100}%` }}
-      />
+      <div className="absolute bottom-0 top-0 w-px bg-white/25"
+        style={{ left: `${ntStart * 100}%` }} />
     </div>
   );
 }
