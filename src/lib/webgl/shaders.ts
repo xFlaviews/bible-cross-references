@@ -77,8 +77,11 @@ void main() {
   py += ny * aSide * width;
 
   // Map to clip space: x [0,1]->[-1,1], y baseline near bottom, arcs fill upward
+  // On tall screens (mobile), scale arcs taller to fill vertical space
+  float aspectScale = uAspect < 1.0 ? 1.0 / max(uAspect, 0.3) : 1.0;
+  float yScale = 3.0 * min(aspectScale, 2.5);
   float clipX = px * 2.0 - 1.0;
-  float clipY = -0.85 + py * 3.0; // baseline -0.85, max arc peak ~0.5
+  float clipY = -0.92 + py * yScale;
 
   // Apply zoom
   clipX = (clipX - (uZoomCenter.x * 2.0 - 1.0)) * uZoomScale + (uZoomCenter.x * 2.0 - 1.0);

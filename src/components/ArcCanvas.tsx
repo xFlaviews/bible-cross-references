@@ -51,7 +51,7 @@ export default function ArcCanvas({ data, instanceData, arcCount }: ArcCanvasPro
 
     try {
       const segments = sizeRef.current.isMobile ? 6 : 12;
-      const mobileArcCount = Math.min(arcCount, 20_000);
+      const mobileArcCount = Math.min(arcCount, 12_000);
       const count = sizeRef.current.isMobile ? mobileArcCount : arcCount;
 
       const arcBuffers = createArcBuffers(regl, instanceData, count, segments);
@@ -132,7 +132,7 @@ export default function ArcCanvas({ data, instanceData, arcCount }: ArcCanvasPro
           uFocusXStart: focusXStart,
           uFocusXEnd: focusXEnd,
           uBreathing: st.mode === 'overview' ? anim.breathingAlpha : 0,
-          uLineWidth: mobile ? 0.0008 : 0.0004,
+          uLineWidth: mobile ? 0.0015 : 0.0004,
           uTime: anim.time,
           uMinVotes: mobile ? 2 : 1,
           uZoomCenter: zoomRef.current.center,
