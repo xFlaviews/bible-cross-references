@@ -1,11 +1,13 @@
 import type { BibleData, BookMeta, ChapterMeta } from '@/types/bible';
 import { distanceToHue } from '@/lib/colors';
 
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 export async function loadBibleData(): Promise<BibleData> {
   const [booksRes, chaptersRes, binRes] = await Promise.all([
-    fetch('/data/books.json'),
-    fetch('/data/chapter-index.json'),
-    fetch('/data/cross-refs.bin'),
+    fetch(`${BASE}/data/books.json`),
+    fetch(`${BASE}/data/chapter-index.json`),
+    fetch(`${BASE}/data/cross-refs.bin`),
   ]);
 
   const books: BookMeta[] = await booksRes.json();
@@ -40,7 +42,7 @@ let versesCache: Record<string, string> | null = null;
 
 export async function loadVerses(): Promise<Record<string, string>> {
   if (versesCache) return versesCache;
-  const res = await fetch('/data/verses.json');
+  const res = await fetch(`${BASE}/data/verses.json`);
   versesCache = await res.json();
   return versesCache!;
 }
