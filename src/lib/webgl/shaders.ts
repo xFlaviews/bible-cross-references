@@ -136,8 +136,9 @@ void main() {
   if (vAlpha < 0.01) discard;
 
   float hue = mix(vHueFrom, vHueTo, vArcProgress);
-  vec3 color = hsl2rgb(hue, 0.8, 0.55);
-  gl_FragColor = vec4(color * vAlpha, vAlpha);
+  vec3 color = hsl2rgb(hue, 0.9, 0.6);
+  float a = vAlpha * 0.75;
+  gl_FragColor = vec4(color * a, a);
 }
 `;
 

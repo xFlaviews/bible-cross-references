@@ -51,7 +51,7 @@ export default function ArcCanvas({ data, instanceData, arcCount }: ArcCanvasPro
 
     try {
       const segments = sizeRef.current.isMobile ? 6 : 12;
-      const mobileArcCount = Math.min(arcCount, 12_000);
+      const mobileArcCount = Math.min(arcCount, 8_000);
       const count = sizeRef.current.isMobile ? mobileArcCount : arcCount;
 
       const arcBuffers = createArcBuffers(regl, instanceData, count, segments);
