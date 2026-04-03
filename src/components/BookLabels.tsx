@@ -35,14 +35,14 @@ export default function BookLabels({ books, totalVerses, isMobile }: BookLabelsP
     return (
       <div className="absolute bottom-0 left-0 right-0 h-[36px] pointer-events-none select-none">
         {/* OT label */}
-        <div className="absolute bottom-2 text-[11px] text-white/50 font-medium"
+        <div className="absolute bottom-2 text-[11px] text-white/50 font-medium whitespace-nowrap"
           style={{ left: `${ntStart * 50}%`, transform: 'translateX(-50%)' }}>
-          Old Testament
+          OT
         </div>
         {/* NT label */}
-        <div className="absolute bottom-2 text-[11px] text-white/50 font-medium"
+        <div className="absolute bottom-2 text-[11px] text-white/50 font-medium whitespace-nowrap"
           style={{ left: `${(ntStart + (1 - ntStart) / 2) * 100}%`, transform: 'translateX(-50%)' }}>
-          New Testament
+          NT
         </div>
         {/* Divider */}
         <div className="absolute bottom-0 top-0 w-px bg-white/30"
