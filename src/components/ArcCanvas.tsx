@@ -50,9 +50,11 @@ export default function ArcCanvas({ data, instanceData, arcCount }: ArcCanvasPro
     destroyBuffers(arcBuffersRef.current, barBuffersRef.current);
 
     try {
-      const segments = sizeRef.current.isMobile ? 8 : 12;
+      const segments = sizeRef.current.isMobile ? 6 : 12;
+      const mobileArcCount = Math.min(arcCount, 20_000);
+      const count = sizeRef.current.isMobile ? mobileArcCount : arcCount;
 
-      const arcBuffers = createArcBuffers(regl, instanceData, arcCount, segments);
+      const arcBuffers = createArcBuffers(regl, instanceData, count, segments);
       arcBuffersRef.current = arcBuffers;
 
       let maxVC = 0;
