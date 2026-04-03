@@ -1,0 +1,530 @@
+[
+  {
+    "name": "Genesis",
+    "abbrev": "Gen",
+    "testament": "OT",
+    "chapterCount": 50,
+    "verseCount": 1533,
+    "startVerse": 0
+  },
+  {
+    "name": "Exodus",
+    "abbrev": "Exod",
+    "testament": "OT",
+    "chapterCount": 40,
+    "verseCount": 1213,
+    "startVerse": 1533
+  },
+  {
+    "name": "Leviticus",
+    "abbrev": "Lev",
+    "testament": "OT",
+    "chapterCount": 27,
+    "verseCount": 859,
+    "startVerse": 2746
+  },
+  {
+    "name": "Numbers",
+    "abbrev": "Num",
+    "testament": "OT",
+    "chapterCount": 36,
+    "verseCount": 1288,
+    "startVerse": 3605
+  },
+  {
+    "name": "Deuteronomy",
+    "abbrev": "Deut",
+    "testament": "OT",
+    "chapterCount": 34,
+    "verseCount": 959,
+    "startVerse": 4893
+  },
+  {
+    "name": "Joshua",
+    "abbrev": "Josh",
+    "testament": "OT",
+    "chapterCount": 24,
+    "verseCount": 658,
+    "startVerse": 5852
+  },
+  {
+    "name": "Judges",
+    "abbrev": "Judg",
+    "testament": "OT",
+    "chapterCount": 21,
+    "verseCount": 618,
+    "startVerse": 6510
+  },
+  {
+    "name": "Ruth",
+    "abbrev": "Ruth",
+    "testament": "OT",
+    "chapterCount": 4,
+    "verseCount": 85,
+    "startVerse": 7128
+  },
+  {
+    "name": "I Samuel",
+    "abbrev": "1 Sam",
+    "testament": "OT",
+    "chapterCount": 31,
+    "verseCount": 810,
+    "startVerse": 7213
+  },
+  {
+    "name": "II Samuel",
+    "abbrev": "2 Sam",
+    "testament": "OT",
+    "chapterCount": 24,
+    "verseCount": 695,
+    "startVerse": 8023
+  },
+  {
+    "name": "I Kings",
+    "abbrev": "1 Kgs",
+    "testament": "OT",
+    "chapterCount": 22,
+    "verseCount": 816,
+    "startVerse": 8718
+  },
+  {
+    "name": "II Kings",
+    "abbrev": "2 Kgs",
+    "testament": "OT",
+    "chapterCount": 25,
+    "verseCount": 719,
+    "startVerse": 9534
+  },
+  {
+    "name": "I Chronicles",
+    "abbrev": "1 Chr",
+    "testament": "OT",
+    "chapterCount": 29,
+    "verseCount": 942,
+    "startVerse": 10253
+  },
+  {
+    "name": "II Chronicles",
+    "abbrev": "2 Chr",
+    "testament": "OT",
+    "chapterCount": 36,
+    "verseCount": 822,
+    "startVerse": 11195
+  },
+  {
+    "name": "Ezra",
+    "abbrev": "Ezra",
+    "testament": "OT",
+    "chapterCount": 10,
+    "verseCount": 280,
+    "startVerse": 12017
+  },
+  {
+    "name": "Nehemiah",
+    "abbrev": "Neh",
+    "testament": "OT",
+    "chapterCount": 13,
+    "verseCount": 406,
+    "startVerse": 12297
+  },
+  {
+    "name": "Esther",
+    "abbrev": "Esth",
+    "testament": "OT",
+    "chapterCount": 10,
+    "verseCount": 167,
+    "startVerse": 12703
+  },
+  {
+    "name": "Job",
+    "abbrev": "Job",
+    "testament": "OT",
+    "chapterCount": 42,
+    "verseCount": 1070,
+    "startVerse": 12870
+  },
+  {
+    "name": "Psalms",
+    "abbrev": "Ps",
+    "testament": "OT",
+    "chapterCount": 150,
+    "verseCount": 2461,
+    "startVerse": 13940
+  },
+  {
+    "name": "Proverbs",
+    "abbrev": "Prov",
+    "testament": "OT",
+    "chapterCount": 31,
+    "verseCount": 915,
+    "startVerse": 16401
+  },
+  {
+    "name": "Ecclesiastes",
+    "abbrev": "Eccl",
+    "testament": "OT",
+    "chapterCount": 12,
+    "verseCount": 222,
+    "startVerse": 17316
+  },
+  {
+    "name": "Song of Solomon",
+    "abbrev": "Song",
+    "testament": "OT",
+    "chapterCount": 8,
+    "verseCount": 117,
+    "startVerse": 17538
+  },
+  {
+    "name": "Isaiah",
+    "abbrev": "Isa",
+    "testament": "OT",
+    "chapterCount": 66,
+    "verseCount": 1292,
+    "startVerse": 17655
+  },
+  {
+    "name": "Jeremiah",
+    "abbrev": "Jer",
+    "testament": "OT",
+    "chapterCount": 52,
+    "verseCount": 1364,
+    "startVerse": 18947
+  },
+  {
+    "name": "Lamentations",
+    "abbrev": "Lam",
+    "testament": "OT",
+    "chapterCount": 5,
+    "verseCount": 154,
+    "startVerse": 20311
+  },
+  {
+    "name": "Ezekiel",
+    "abbrev": "Ezek",
+    "testament": "OT",
+    "chapterCount": 48,
+    "verseCount": 1273,
+    "startVerse": 20465
+  },
+  {
+    "name": "Daniel",
+    "abbrev": "Dan",
+    "testament": "OT",
+    "chapterCount": 12,
+    "verseCount": 357,
+    "startVerse": 21738
+  },
+  {
+    "name": "Hosea",
+    "abbrev": "Hos",
+    "testament": "OT",
+    "chapterCount": 14,
+    "verseCount": 197,
+    "startVerse": 22095
+  },
+  {
+    "name": "Joel",
+    "abbrev": "Joel",
+    "testament": "OT",
+    "chapterCount": 3,
+    "verseCount": 73,
+    "startVerse": 22292
+  },
+  {
+    "name": "Amos",
+    "abbrev": "Amos",
+    "testament": "OT",
+    "chapterCount": 9,
+    "verseCount": 146,
+    "startVerse": 22365
+  },
+  {
+    "name": "Obadiah",
+    "abbrev": "Obad",
+    "testament": "OT",
+    "chapterCount": 1,
+    "verseCount": 21,
+    "startVerse": 22511
+  },
+  {
+    "name": "Jonah",
+    "abbrev": "Jonah",
+    "testament": "OT",
+    "chapterCount": 4,
+    "verseCount": 48,
+    "startVerse": 22532
+  },
+  {
+    "name": "Micah",
+    "abbrev": "Mic",
+    "testament": "OT",
+    "chapterCount": 7,
+    "verseCount": 105,
+    "startVerse": 22580
+  },
+  {
+    "name": "Nahum",
+    "abbrev": "Nah",
+    "testament": "OT",
+    "chapterCount": 3,
+    "verseCount": 47,
+    "startVerse": 22685
+  },
+  {
+    "name": "Habakkuk",
+    "abbrev": "Hab",
+    "testament": "OT",
+    "chapterCount": 3,
+    "verseCount": 56,
+    "startVerse": 22732
+  },
+  {
+    "name": "Zephaniah",
+    "abbrev": "Zeph",
+    "testament": "OT",
+    "chapterCount": 3,
+    "verseCount": 53,
+    "startVerse": 22788
+  },
+  {
+    "name": "Haggai",
+    "abbrev": "Hag",
+    "testament": "OT",
+    "chapterCount": 2,
+    "verseCount": 38,
+    "startVerse": 22841
+  },
+  {
+    "name": "Zechariah",
+    "abbrev": "Zech",
+    "testament": "OT",
+    "chapterCount": 14,
+    "verseCount": 211,
+    "startVerse": 22879
+  },
+  {
+    "name": "Malachi",
+    "abbrev": "Mal",
+    "testament": "OT",
+    "chapterCount": 4,
+    "verseCount": 55,
+    "startVerse": 23090
+  },
+  {
+    "name": "Matthew",
+    "abbrev": "Matt",
+    "testament": "NT",
+    "chapterCount": 28,
+    "verseCount": 1071,
+    "startVerse": 23145
+  },
+  {
+    "name": "Mark",
+    "abbrev": "Mark",
+    "testament": "NT",
+    "chapterCount": 16,
+    "verseCount": 678,
+    "startVerse": 24216
+  },
+  {
+    "name": "Luke",
+    "abbrev": "Luke",
+    "testament": "NT",
+    "chapterCount": 24,
+    "verseCount": 1151,
+    "startVerse": 24894
+  },
+  {
+    "name": "John",
+    "abbrev": "John",
+    "testament": "NT",
+    "chapterCount": 21,
+    "verseCount": 879,
+    "startVerse": 26045
+  },
+  {
+    "name": "Acts",
+    "abbrev": "Acts",
+    "testament": "NT",
+    "chapterCount": 28,
+    "verseCount": 1007,
+    "startVerse": 26924
+  },
+  {
+    "name": "Romans",
+    "abbrev": "Rom",
+    "testament": "NT",
+    "chapterCount": 16,
+    "verseCount": 433,
+    "startVerse": 27931
+  },
+  {
+    "name": "I Corinthians",
+    "abbrev": "1 Cor",
+    "testament": "NT",
+    "chapterCount": 16,
+    "verseCount": 437,
+    "startVerse": 28364
+  },
+  {
+    "name": "II Corinthians",
+    "abbrev": "2 Cor",
+    "testament": "NT",
+    "chapterCount": 13,
+    "verseCount": 257,
+    "startVerse": 28801
+  },
+  {
+    "name": "Galatians",
+    "abbrev": "Gal",
+    "testament": "NT",
+    "chapterCount": 6,
+    "verseCount": 149,
+    "startVerse": 29058
+  },
+  {
+    "name": "Ephesians",
+    "abbrev": "Eph",
+    "testament": "NT",
+    "chapterCount": 6,
+    "verseCount": 155,
+    "startVerse": 29207
+  },
+  {
+    "name": "Philippians",
+    "abbrev": "Phil",
+    "testament": "NT",
+    "chapterCount": 4,
+    "verseCount": 104,
+    "startVerse": 29362
+  },
+  {
+    "name": "Colossians",
+    "abbrev": "Col",
+    "testament": "NT",
+    "chapterCount": 4,
+    "verseCount": 95,
+    "startVerse": 29466
+  },
+  {
+    "name": "I Thessalonians",
+    "abbrev": "1 Thess",
+    "testament": "NT",
+    "chapterCount": 5,
+    "verseCount": 89,
+    "startVerse": 29561
+  },
+  {
+    "name": "II Thessalonians",
+    "abbrev": "2 Thess",
+    "testament": "NT",
+    "chapterCount": 3,
+    "verseCount": 47,
+    "startVerse": 29650
+  },
+  {
+    "name": "I Timothy",
+    "abbrev": "1 Tim",
+    "testament": "NT",
+    "chapterCount": 6,
+    "verseCount": 113,
+    "startVerse": 29697
+  },
+  {
+    "name": "II Timothy",
+    "abbrev": "2 Tim",
+    "testament": "NT",
+    "chapterCount": 4,
+    "verseCount": 83,
+    "startVerse": 29810
+  },
+  {
+    "name": "Titus",
+    "abbrev": "Titus",
+    "testament": "NT",
+    "chapterCount": 3,
+    "verseCount": 46,
+    "startVerse": 29893
+  },
+  {
+    "name": "Philemon",
+    "abbrev": "Phlm",
+    "testament": "NT",
+    "chapterCount": 1,
+    "verseCount": 25,
+    "startVerse": 29939
+  },
+  {
+    "name": "Hebrews",
+    "abbrev": "Heb",
+    "testament": "NT",
+    "chapterCount": 13,
+    "verseCount": 303,
+    "startVerse": 29964
+  },
+  {
+    "name": "James",
+    "abbrev": "Jas",
+    "testament": "NT",
+    "chapterCount": 5,
+    "verseCount": 108,
+    "startVerse": 30267
+  },
+  {
+    "name": "I Peter",
+    "abbrev": "1 Pet",
+    "testament": "NT",
+    "chapterCount": 5,
+    "verseCount": 105,
+    "startVerse": 30375
+  },
+  {
+    "name": "II Peter",
+    "abbrev": "2 Pet",
+    "testament": "NT",
+    "chapterCount": 3,
+    "verseCount": 61,
+    "startVerse": 30480
+  },
+  {
+    "name": "I John",
+    "abbrev": "1 John",
+    "testament": "NT",
+    "chapterCount": 5,
+    "verseCount": 105,
+    "startVerse": 30541
+  },
+  {
+    "name": "II John",
+    "abbrev": "2 John",
+    "testament": "NT",
+    "chapterCount": 1,
+    "verseCount": 13,
+    "startVerse": 30646
+  },
+  {
+    "name": "III John",
+    "abbrev": "3 John",
+    "testament": "NT",
+    "chapterCount": 1,
+    "verseCount": 14,
+    "startVerse": 30659
+  },
+  {
+    "name": "Jude",
+    "abbrev": "Jude",
+    "testament": "NT",
+    "chapterCount": 1,
+    "verseCount": 25,
+    "startVerse": 30673
+  },
+  {
+    "name": "Revelation of John",
+    "abbrev": "Rev",
+    "testament": "NT",
+    "chapterCount": 22,
+    "verseCount": 404,
+    "startVerse": 30698
+  }
+]
